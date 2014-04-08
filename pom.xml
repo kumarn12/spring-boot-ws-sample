@@ -13,7 +13,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.0.0.RELEASE</version>
+		<version>1.0.1.RELEASE</version>
 	</parent>
 
 	<dependencies>
@@ -29,11 +29,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
-			<version>2.6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.ws</groupId>
@@ -72,54 +67,8 @@
 				</executions>
 				<configuration>
 					<schemaDirectory>${project.basedir}/src/main/resources/</schemaDirectory>
-
-					<!--<packageName>com.example.myschema</packageName> &lt;!&ndash; The name of your generated source package &ndash;&gt;-->
 				</configuration>
 			</plugin>
-			<!--<plugin>
-				<groupId>org.jvnet.jaxb2.maven2</groupId>
-				<artifactId>maven-jaxb2-plugin</artifactId>
-				<version>0.8.3</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-						<phase>compile</phase>
-					</execution>
-				</executions>
-				<configuration>
-					<schemaLanguage>XSD</schemaLanguage>
-
-					<forceRegenerate>true</forceRegenerate>
-					<schemaDirectory>${project.basedir}/src/main/resources/wsdl/</schemaDirectory>
-					<schemaIncludes>
-						<include>users.xsd</include>
-					</schemaIncludes>
-				</configuration>
-			</plugin>-->
-			<!--<plugin>
-				<groupId>org.apache.cxf</groupId>
-				<artifactId>cxf-xjc-plugin</artifactId>
-				<version>2.7.0</version>
-				<executions>
-					<execution>
-						<id>generate-sources</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>xsdtojava</goal>
-						</goals>
-						<configuration>
-							<sourceRoot>${project.build.directory}/generated-sources/cxf</sourceRoot>
-							<xsdOptions>
-								<xsdOption>
-									<xsd>${project.basedir}/src/main/resources/wsdl/users.xsd</xsd>
-								</xsdOption>
-							</xsdOptions>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>-->
 		</plugins>
 	</build>
 
