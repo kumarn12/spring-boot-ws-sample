@@ -6,7 +6,7 @@
 
 	<sws:annotation-driven />
 
-	<sws:dynamic-wsdl id="users" targetNamespace="http://maciejwalkowiak.pl/spring-ws/stackoverflow" portTypeName="UsersPort" locationUri="/users/">
+	<sws:dynamic-wsdl id="users" targetNamespace="http://maciejwalkowiak.pl/springws/demo" portTypeName="UsersPort" locationUri="/users/">
 		<sws:xsd location="classpath:users.xsd"/>
 	</sws:dynamic-wsdl>
 </beans>
