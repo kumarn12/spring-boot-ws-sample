@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://maciejwalkowiak.pl/springws/demo"
+		   targetNamespace="http://maciejwalkowiak.pl/springws/demo">
+
+	<xs:element name="getUserRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" name="username" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getUserResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" name="users" type="tns:user"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="user">
+		<xs:sequence>
+			<xs:element name="username" type="xs:string"/>
+			<xs:element name="reputation" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
