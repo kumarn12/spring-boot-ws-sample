@@ -10,6 +10,8 @@ import org.springframework.context.annotation.Configuration;
 @EnableAutoConfiguration
 public class Application {
 
+	//loading the container
+	
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
